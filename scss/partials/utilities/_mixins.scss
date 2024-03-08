@@ -1,0 +1,197 @@
+//colours//
+$white:#fff;
+
+$black:#000;
+$woodsmoke:#121318; //black button hover//
+$charade:#272936; //black button//
+$river-bed:#464d5c; //text
+$bright-gray:#3D404E;
+$tuna:#333645; //search bar 2//
+$manatee:#999aa2; //search bar 1//
+$waterloo:#84858F; //contact button hover//
+$gray-chateau:#a3a8ac; //cite//
+$alto:#CECECE;
+$mercury:#E5E5E5;
+$input:#ccc;
+$newsletter:#ddd;
+
+
+$blue-bayoux:#526781; //Bespoke software Nav//
+$hoki:#67809F; //software//
+$blue-ribbon:#166AF4; //google review hover//
+$cornflower-blue: #2A6EC6; //banner it hover
+$havelock-blue:#4183d7; //support button and IT//
+$dodger-blue:#4387f6; //google reviews//
+$mariner:#286abd; //IT Nav//
+$viking:#5bc0de; //focus//
+
+$jade:#00b67b; //trustpilot//
+$green-haze:#009B69; //trustpilot hover/
+$eucalyptus:#25A25A; //digital marketing nav
+$shamrock:#2ecc71; //digital marketing background//
+$jungle-green:#26AB5F; //partner slideshow//
+
+
+$punch:#CE4125; //developer course nav//
+$valencia:#d64541; //telecoms services triangle//
+$tall-poppy:#BC2C28;//telecoms nav//
+$cognac:#A3331D; //devolper nav//
+$red-ribbon:#DE093F; //cyber nav//
+$radical-red:#F62459; //cyber security//
+
+
+$affair:#79539A; //web hover//
+$wisteria:#926FB1; // code nav//
+
+//footer colours//
+$footer:#212330;
+$facebook:#3B5998;
+$link:#0077B5;
+$twitter:#00ACED;
+$insta:#D93175;
+
+
+//buttons//
+@mixin hamburger() {
+    content: "";
+    display:block;
+    position: absolute;
+    width: 33px;
+    height: 4px;
+    background-color: $white;
+    border-radius: 0;
+    left: 0;
+}
+@mixin btn-format($color) {
+    display:inline-block;
+    font-weight: 400;
+    height: auto;
+    line-height: 35px;
+    padding: 6px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    color: $white;
+    background-color: $color;
+    row-gap: em(10px);
+
+    &:hover {
+        cursor: pointer;
+    }
+    
+}
+@mixin btn-banner($color) {
+    margin-top: 1.938rem;
+    line-height: 50px;
+    padding: 5px 20px;
+    font-size: 1.25rem;
+    border-radius: 3px;
+    display: inline-block;
+    text-wrap: nowrap;
+    text-decoration: none;
+    font-weight: 400;
+    color: $white;
+    background-color: $color;
+  text-transform: uppercase;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+}
+@mixin btn-welcome($color) {
+    color: $white;
+    background-color: $color;
+    border-radius: 6px;
+    margin-right: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    display: inline-block;
+    font-weight: 400;
+    height: auto;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+}
+@mixin service-button($color) {
+    display: inline-block;
+      font-weight: 400;
+      height: auto;
+      line-height: 35px;
+      padding: 6px 12px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 14px;
+      border: 1px solid transparent;
+      border-radius: 2px;
+      color: $white;
+      row-gap: 0.625em;
+      text-transform: uppercase;
+      border-radius: 3px;
+      width: 50%;
+      align-self: center;
+      margin-right: 0;
+      background-color: $color;
+    }
+//
+
+@mixin nav-triangle($color) {
+    &>a::before {
+        top: 208px;
+        content: "";
+    width: 0px;
+    height: 0px;
+        border-style: solid;
+        border-width: 1.5rem 5rem 0 5.5rem;
+        border-color: $color transparent transparent transparent; 
+        transform: rotate(0deg);
+        z-index: 1000;
+        display: block;
+    position: absolute;
+    border-top: solid 55px $color;
+    @include viewport(large){
+        top: 212px;
+    border-left-width: 67px;
+    border-right-width: 67px;
+    }
+    @include viewport(x-large){
+        top: 206px;
+    border-left-width: 84px;
+    border-right-width: 84px;
+    }
+    @include viewport(xx-large){
+        top: 222.5px;
+    border-left-width: 84px;
+    border-right-width: 84px;
+    }
+}
+}
+@mixin service-box() {
+    top: 0;
+    border: 1px solid $input;
+    border-radius: 0 0 3px 3px;
+    flex-direction: column;
+    margin-bottom: 30px;
+    position: relative;
+    transition: .5s ease;
+    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+    max-width: 720px;
+    padding: 30px;
+    display: flex;
+    border-radius: 15px;
+    text-align: center;
+    color: $river-bed;
+    
+    
+  }
+  

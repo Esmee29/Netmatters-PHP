@@ -1,0 +1,142 @@
+ 
+.email-newsletter {
+    line-height: 32px;
+    font-weight: 600;
+    color: $tuna;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.email-background{
+  background-color: $newsletter;
+}
+#newsletter-email {
+  box-sizing: border-box;
+  height: 47px;
+  padding: 5px 15px;
+  border-color: $input;
+  width: 100%;
+  font-size: 14px;
+  background-color: $white;
+  background-image: none;
+  border: 1px solid $mercury;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.news-input {
+  width: 100%;
+}
+#newsletter-name:focus {
+  border-color: $viking;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+#newsletter-email:focus {
+  border-color: $viking;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+#newsletter-name {
+  box-sizing: border-box;
+  height: 47px;
+  padding: 5px 15px;
+  border-color: $input;
+  width: 100%;
+  font-size: 14px;
+  background-color: $white;
+  background-image: none;
+  border: 1px solid $mercury;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.name-input{
+  flex: 1 1;
+  padding-right: 35px;
+  margin-bottom: 15px; 
+}
+.email-input{
+  flex: 1 1;
+  padding-right: 35px;
+  margin-bottom: 15px; 
+}
+.btn-subscribe {
+@include btn-format($tuna)
+}
+.btn-subscribe:hover {
+  @include btn-format($footer)
+  }  
+label.required:after, label .required:after {
+  content: " *";
+  color: $valencia;
+}
+.newsletter{
+  text-align: left;
+  display: flex;
+    flex-wrap: wrap;
+}
+.email-news {
+  background-color: inherit;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.email {
+  justify-content: flex-start;
+  width: 100%;
+  line-height: 47px;
+}
+.checkbox-container {
+  display: flex;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  min-height: 32px;
+  min-width: 32px;
+  max-height: 32px;
+  max-width: 32px;
+  background-color: #ddd;
+  border: 3px solid #333645;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  margin-right: 20px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.label-checkmark {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+input[type="checkbox"]:after {
+  font-family: 'icomoon';
+  content: "\ea10";
+  color: $white;
+  display: none;
+}
+
+input[type="checkbox"]:checked {
+  background-color: $tuna;
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+.privacy-policy {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.privacy-policy a{
+  text-decoration: underline;
+    color: $black;
+}

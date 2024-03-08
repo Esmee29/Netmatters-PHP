@@ -1,0 +1,72 @@
+
+.welcome-netmatters {
+    color: $white;
+    text-align: left;
+}
+.background-grey{
+ background-color: $tuna;   
+}
+.black-buttons:hover a:hover{
+    text-decoration: none;
+}
+.welcome-left a{
+    color: $white;
+   }
+   .welcome-left p{
+    font-size: 1em;
+   }
+   .welcome-left a:hover{
+    text-decoration: underline;
+   }
+.button-black {
+    @include btn-welcome($charade)
+}
+.button-black:hover{
+    background-color: $woodsmoke;
+}
+.button-black{
+    margin-top: 20px;
+}
+strong {
+    font-weight: 600;
+}
+.stars {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+em {
+    font-style: italic;
+    font-size: 1.3rem;
+}
+cite {
+    font-weight: 600;
+    color: $gray-chateau;
+    font-size: 1.1rem;
+}
+cite:hover {
+    text-decoration: none;
+}
+.author:hover {
+    text-decoration: underline;
+}
+.btn-reviews-google {
+    @include btn-welcome($dodger-blue)
+}
+.btn-reviews-google:hover {
+    background-color: $blue-ribbon;
+    
+}
+.btn-reviews-trustpilot {
+    @include btn-welcome($jade)
+}
+.btn-reviews-trustpilot {
+    margin-top: 30px;
+}
+.btn-reviews-trustpilot:hover {
+    background-color: $green-haze;
+}
+.welcome-section {
+    padding-top: 20px;
+    padding-bottom: 50px;
+          } 

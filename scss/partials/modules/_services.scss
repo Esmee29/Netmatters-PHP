@@ -1,0 +1,493 @@
+
+.service-heading {
+    display: flex;
+    background-color: $white;
+    justify-content: space-between;
+  }
+
+  .service-blocks:hover p{
+      color: $white;
+  }
+  .float-container {
+    display: block;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+    border: 1px solid $input;
+    top: 0;
+    transition: .5s;
+  }
+
+  .icon-circle {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    text-align: center;
+    align-self: center;
+    margin: 0 auto 17px;
+}
+.icon-format-services {
+  font-size: 2rem;
+line-height: 62px;
+  color: $white;
+}
+.service-list h2 {
+    font-size: 2.7rem;
+    color: $tuna;
+  }
+  .service-list h3 {
+    font-size: 1.625rem;
+  }
+  .service-title .h1 {
+    font-size: 2.7rem;
+    margin-top: -13px;
+    color: $tuna;
+  }
+
+
+  .service-link {
+    color: $white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+  }
+  .service-block-one:hover .h2{
+    color: $white;
+  }
+  .service-block-two:hover .h2{
+    color: $white;
+  }
+  .service-block-three:hover .h2{
+    color: $white;
+  }
+  .service-block-four:hover .h2 {
+    color: $white;
+  }
+  .service-block-five:hover .h2{
+    color: $white;
+  }
+  .service-block-six:hover .h2{
+    color: $white;
+  }
+  .service-block-seven:hover .h2{
+    color: $white;
+  }
+  .service-link > span.h2 {
+    padding-bottom: 10px;
+  }
+  .service-block-one  {
+    @include service-box
+    
+  }
+  .service-block-one:hover, .btn-software:hover {
+    top: -10px;
+    transition: .5s ease;
+  }
+  .service-block-one .h2, .btn-software .h2 {
+    font-size: 1.3rem;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 10px;
+    margin: 0 0 11px;
+  }
+  .service-block-one .p, .btn-software .p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: .8125rem;
+    line-height: 1.375rem;
+  }
+  .service-block-one .btn, .btn-software .btn {
+    min-width: 130px;
+    max-width: 130px;
+    font-size: 1.063rem;
+    margin-bottom: 0;
+    line-height: 35px;
+    align-self: center;
+  }
+  
+  .service-block-one:hover, .btn-software:hover {
+    background-color: $hoki;
+    color: $white;
+  }
+
+  .service-block-one:hover .btn-software, .btn-software:hover .btn-software {
+    background-color: $white;
+    color: $hoki;
+  }
+
+  .service-block-one:hover .icon-circle-software, .btn-software:hover .icon-circle-software {
+    color: $hoki;
+    background-color: $white;
+  }
+  .service-block-one:hover .icon-laptop, .btn-software:hover .icon-laptop {
+    color: $hoki;
+    background-color: $white;
+  }
+  
+  .service-block-two, .btn-it {
+    @include service-box
+    
+  }
+  .service-block-two:hover, .btn-it:hover {
+    top: -10px;
+    transition: .5s ease;
+  }
+
+  .service-block-two .h2, .btn-it .h2 {
+    font-size: 1.3rem;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 10px;
+    margin: 0 0 11px;
+  }
+  .service-block-two .p, .btn-it .p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: .8125rem;
+    line-height: 1.375rem;
+  }
+  .service-block-two .btn, .btn-it .btn {
+    min-width: 130px;
+    max-width: 130px;
+    font-size: 1.063rem;
+    margin-bottom: 0;
+    line-height: 35px;
+    align-self: center;
+  }
+    
+      
+      .icon-circle-software {
+        background-color: $hoki;
+      }
+      .icon-circle-it {
+        background-color: $havelock-blue;
+      }
+      .icon-circle-dm {
+        background-color: $shamrock;
+      }
+      .icon-circle-ts {
+        background-color: $valencia;
+      }
+      .icon-circle-wd {
+        background-color: $wisteria;
+      }
+      .icon-circle-cs {
+        background-color: $radical-red;
+      }
+      .icon-circle-dt {
+        background-color: $punch;
+      }
+  .service-block-two:hover, .btn-it:hover {
+    background-color: $havelock-blue;
+    color: $white;
+  }
+  .service-block-two:hover .btn-it, .btn-it:hover .btn-it {
+    background-color: $white;
+    color: $havelock-blue
+  }
+  .service-block-two:hover .icon-circle-it, .btn-it:hover .icon-circle-it {
+    fill: $havelock-blue;
+    background-color: $white;
+  }
+  .service-block-two:hover .icon-display, .btn-it:hover .icon-display {
+    color: $havelock-blue;
+    background-color: $white;
+  }
+  .service-block-three, .btn-dm {
+    @include service-box
+    
+  }
+  .service-block-three:hover, .btn-dm:hover {
+    top: -10px;
+    transition: .5s ease;
+  }
+  .service-block-three .h2, .btn-dm .h2 {
+    font-size: 1.3rem;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 10px;
+    margin: 0 0 11px;
+  }
+  .service-block-three .p, .btn-dm .p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: .8125rem;
+    line-height: 1.375rem;
+  }
+  .service-block-three .btn, .btn-dm .btn {
+    min-width: 130px;
+    max-width: 130px;
+    font-size: 1.063rem;
+    margin-bottom: 0;
+    line-height: 35px;
+    align-self: center;
+  }
+  
+  .service-block-three:hover, .btn-dm:hover {
+    background-color: $shamrock;
+    color: $white;
+  }
+  .service-block-three:hover .btn-dm, .btn-dm:hover .btn-dm {
+    background-color: $white;
+    color: $shamrock;
+  }
+  .service-block-three:hover .icon-circle-dm, .btn-dm:hover .icon-circle-dm {
+    fill: $shamrock;
+    background-color: $white;
+  }
+  .service-block-three:hover .icon-bar-graph, .btn-dm:hover .icon-bar-graph {
+    color: $shamrock;
+    background-color: $white;
+  }
+  .service-block-four, .btn-ts {
+     @include service-box
+    
+  }
+  .service-block-four:hover, .btn-ts:hover {
+    top: -10px;
+    transition: .5s ease;
+  }
+  .service-block-four .h2, .btn-ts .h2 {
+    font-size: 1.3rem;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 10px;
+    margin: 0 0 11px;
+  }
+  .service-block-four .p, .btn-ts .p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: .8125rem;
+    line-height: 1.375rem;
+  }
+  .service-block-four .btn, .btn-ts .btn {
+    min-width: 130px;
+    max-width: 130px;
+    font-size: 1.063rem;
+    margin-bottom: 0;
+    line-height: 35px;
+    align-self: center;
+  }
+  
+  .service-block-four:hover, .btn-ts:hover {
+    background-color: $valencia;
+    color: $white;
+  }
+ 
+  .service-block-four:hover .btn-ts, .btn-ts:hover .btn-ts {
+    background-color: $white;
+    color: $valencia;
+  }
+  .service-block-four:hover .icon-circle-ts, .btn-ts:hover .icon-circle-ts {
+    fill: $valencia;
+    background-color: $white;
+  }
+  .service-block-four:hover .icon-phone_in_talk, .btn-ts:hover .icon-phone_in_talk {
+    color: $valencia;
+    background-color: $white;
+  }
+  .service-block-five, .btn-wd {
+    @include service-box
+    
+  }
+  .service-block-five:hover, .btn-wd:hover {
+    top: -10px;
+    transition: .5s ease;
+  }
+  .service-block-five .h2, .btn-wd .h2 {
+    font-size: 1.3rem;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 10px;
+    margin: 0 0 11px;
+  }
+  .service-block-five .p, .btn-wd .p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: .8125rem;
+    line-height: 1.375rem;
+  }
+  .service-block-five .btn, .btn-wd .btn {
+    min-width: 130px;
+    max-width: 130px;
+    font-size: 1.063rem;
+    margin-bottom: 0;
+    line-height: 35px;
+    align-self: center;
+  }
+  
+  .service-block-five:hover, .btn-wd:hover {
+    background-color: $wisteria;
+    color: $white;
+  }
+  .service-block-five:hover .btn-wd, .btn-wd:hover .btn-wd {
+    background-color: $white;
+    color: $wisteria;
+  }
+  .service-block-five:hover .icon-circle-wd, .btn-wd:hover .icon-circle-wd {
+    fill: $wisteria;
+    background-color: $white;
+  }
+  .service-block-five:hover .icon-code, .btn-wd:hover .icon-code {
+    color: $wisteria;
+    background-color: $white;
+  }
+  .service-block-six, .btn-cs {
+    @include service-box
+    
+  }
+  .service-block-six:hover, .btn-cs:hover {
+    top: -10px;
+    transition: .5s ease;
+  }
+  .service-block-six .h2, .btn-cs .h2 {
+    font-size: 1.3rem;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 10px;
+    margin: 0 0 11px;
+  }
+  .service-block-six .p, .btn-cs .p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: .8125rem;
+    line-height: 1.375rem;
+  }
+  .service-block-six .btn, .btn-cs .btn {
+    min-width: 130px;
+    max-width: 130px;
+    font-size: 1.063rem;
+    margin-bottom: 0;
+    line-height: 35px;
+    align-self: center;
+  }
+  .service-block-six:hover, .btn-cs:hover {
+    background-color: $radical-red;
+    color: $white;
+  }
+  .service-block-six:hover .btn-cs, .btn-cs:hover .btn-cs {
+    background-color: $white;
+    color: $radical-red;
+  }
+  .service-block-six:hover .icon-circle-cs, .btn-cs:hover .icon-circle-cs {
+    fill: $radical-red;
+    background-color: $white;
+  }
+
+  .service-block-six:hover .icon-security, .btn-cs:hover .icon-security {
+    color: $radical-red;
+    background-color: $white;
+  }
+  .service-block-seven, .btn-dt {
+    @include service-box
+    
+  }
+  .service-block-seven:hover, .btn-dt:hover {
+    top: -10px;
+    transition: .5s ease;
+  }
+  .service-block-seven .h2, .btn-dt .h2 {
+    font-size: 1.3rem;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 10px;
+    margin: 0 0 11px;
+  }
+  .service-block-seven .p, .btn-dt .p {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: .8125rem;
+    line-height: 1.375rem;
+    
+  }
+  .service-block-seven .btn, .btn-dt .btn {
+    min-width: 130px;
+    max-width: 130px;
+    font-size: 1.063rem;
+    margin-bottom: 0;
+    line-height: 35px;
+    align-self: center;
+  }
+  
+  .service-block-seven:hover, .btn-dt:hover {
+    background-color: $punch;
+    color: $white;
+  }
+
+  .service-block-seven:hover .btn-dt, .btn-dt:hover .btn-dt {
+    background-color: $white;
+    color: $punch;
+  }
+
+  .service-block-seven:hover .icon-circle-dt, .btn-dt:hover .icon-circle-dt {
+    fill: $punch;
+    background-color: $white;
+  }
+  
+  .service-block-seven:hover .icon-googlescholar-service, .btn-dt:hover .icon-googlescholar-service {
+    color: $punch;
+    background-color: $white;
+  }
+  
+  .btn-software {
+    @include service-button($hoki)
+  }
+  .btn-software:hover {
+    cursor: pointer;
+  }
+  .btn-it {
+    @include service-button($havelock-blue)
+  }
+  .btn-it:hover {
+    cursor: pointer;
+  }
+  .btn-dm {
+    @include service-button($shamrock)
+  }
+  .btn-dm:hover {
+    cursor: pointer;
+  }
+  .btn-ts {
+    @include service-button($valencia)
+  }
+  .btn-ts:hover {
+    cursor: pointer;
+  }
+  .btn-wd {
+    @include service-button($wisteria)
+  }
+  .btn-wd:hover {
+    cursor: pointer;
+  }
+  .btn-cs {
+    @include service-button($radical-red)
+  }
+  .btn-cs:hover {
+    cursor: pointer;
+  }
+  .btn-dt {
+    @include service-button($punch)
+  }
+  .btn-dt:hover {
+    cursor: pointer;
+  }
+
+  .service-block-six .btn-cs, .btn-cs .btn-cs {
+    margin-left: 0;
+  }
+  .view-all-large{
+    margin-right: 50px;
+    margin-top: 10px;
+  }

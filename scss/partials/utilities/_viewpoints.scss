@@ -1,0 +1,804 @@
+//header//
+.hidden-sm{
+    @include viewport(small) {
+        display:none;
+         }  
+}
+.hidden-md{
+    @include viewport(medium) {
+        display:none;
+         }
+} 
+.hidden-lg{
+    @include viewport(large) {
+        display:none;
+         }
+} 
+ .hidden-xlg{
+    @include viewport(x-large) {
+        display:none;
+         }
+}
+.hidden-xxlg{
+    @include viewport(xx-large) {
+        display:none;
+         }
+}
+.view-all-large{
+    @include viewport(small) {
+        display:none;
+         }    
+}
+ .view-all-mobile{
+    @include viewport(medium) {
+        display:none;
+         }
+    @include viewport(large){
+        display:none;
+    }
+    @include viewport(x-large) {
+        display:none;
+         }
+         
+ }
+ @media (min-width: 1440px){
+    .view-all-mobile {
+        display:none;
+    }
+    }
+.header-large {
+    @include viewport(large){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0 20px;
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+    @include viewport(x-large) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0 20px;
+        padding-top: 25px;
+        padding-bottom: 15px;
+         }
+         @include viewport(xx-large) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 0 20px;
+            padding-top: 25px;
+            padding-bottom: 15px;
+             }
+    
+    
+}
+.header-small{
+    @include viewport(small){
+            padding-top: 25px;
+            padding-bottom: 30px;
+            margin: 0 15px;
+    }
+    @include viewport(medium){
+        padding: 20px 20px 8px 20px;
+        }
+}
+
+.logo {
+    @include viewport(x-large) {
+    height: 64px;
+         }
+         @include viewport(xx-large) {
+            height: 80px;
+                 }
+}
+.logo-container{
+    @include viewport(xx-large){
+        margin-right: 50px;
+        }
+
+}
+.search-bar{
+    @include viewport(medium){
+        font-size: 1em;
+        fill: $white;
+        position: relative;
+        display: flex;
+        width: 100%;
+        margin-top: 0;
+        max-width: 243px;
+        margin-right: 15px;
+    }
+    @include viewport(large){
+        max-width: 66px;
+    }
+}.search-box{
+    @include viewport(medium){
+        padding: 1em;
+        flex: 1;
+        background-color: $white;
+        max-width: 175px;
+        width: 142px;
+        padding: 5px 15px;
+        border: 1px 0 1px 1px $manatee;
+    }    
+}
+.search-box-1{
+    @include viewport(x-large){
+    width: 200px;
+
+    }
+    @include viewport(xx-large){
+        width: 240px;
+    }   
+}
+
+input[type=text] {
+    @include viewport(medium){
+        border: 1px solid $input;
+        outline: none;
+        font-size: 1em;
+        height: 57px;
+    }
+}
+.header-row{    
+    @include viewport(large){
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    }
+    @include viewport(x-large){
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px; 
+        }
+        @include viewport(xx-large){
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 15px;
+            padding-right: 15px; 
+            }
+}
+
+.search-bar button{
+    @include viewport(medium){
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 14px 20px 13px;
+        border-radius: 3px;
+        background-color: $manatee;
+        border: none;
+        outline: none;
+        border-radius: 0 5% 5% 0;
+        &:hover {
+            cursor: pointer;
+            background-color:  $waterloo;
+        }  
+    }
+    @include viewport(large){
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 14px 20px 13px;
+        border-radius: 3px;
+        background-color: $manatee;
+        border: none;
+        outline: none;
+        border-radius: 0 5% 5% 0;
+        &:hover {
+            cursor: pointer;
+            background-color:  $waterloo;
+        }    
+    }
+    @include viewport(x-large){
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 14px 20px 13px;
+        border-radius: 3px;
+        background-color: $manatee;
+        border: none;
+        outline: none;
+        border-radius: 0 5% 5% 0;
+        &:hover {
+            cursor: pointer;
+            background-color:  $waterloo;
+        }    
+    }
+    @include viewport(xx-large){
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 14px 20px 13px;
+        border-radius: 3px;
+        background-color: $manatee;
+        border: none;
+        outline: none;
+        border-radius: 0 5% 5% 0;
+        &:hover {
+            cursor: pointer;
+            background-color:  $waterloo;
+        }    
+    }
+}
+.btn-help{
+    @include viewport(x-large){
+        align-items: center;
+        justify-content: center;    
+    } 
+}
+.header-elements{
+    @include viewport(medium){
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        justify-content: flex-start;
+    }   
+} 
+.bottom-header{
+    @include viewport(large){
+        background-color: $tuna;   
+    }   
+}
+.header-high{
+    @include viewport(medium){
+        justify-content: space-flex-start;
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }      
+}
+.nm-logo-black{
+    @include viewport(medium){
+        max-width: 345px !important;
+    } 
+    @include viewport(large){
+        position: relative;
+        left: 0;   
+    }           
+}
+.container-mobile{
+    @include viewport(small){
+        display: table-cell;
+  vertical-align: middle;;
+    }    
+}
+.nav:hover .sub-menu{
+    @include viewport(large){
+        margin-top: -10px;
+    }
+    @include viewport(x-large){
+        width: 1200px !important;
+        margin-top: -12px !important;
+    }
+}
+
+
+//carousel//
+#banner {
+    h1 {
+  
+      @include viewport(large) {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+  
+      @include viewport(x-large) {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+    }
+  
+    p {
+  
+      @include viewport(large) {
+        font-size: 1.625rem;
+        line-height: 2.5rem;
+      }
+  
+      @include viewport(x-large) {
+        font-size: 1.625rem;
+        line-height: 2.5rem;
+      }
+    }
+  }
+  
+  .carousell-content {
+    
+      @include viewport(medium) { 
+        width: 640px;
+      }
+    
+      @include viewport(large) {
+        text-align: left;
+      }
+    
+      @include viewport(x-large) {
+        width: 1200px;
+        text-align: left;
+      }
+      
+      & h1 {
+    
+        @include viewport(large) {
+          width: 900px;
+          font-size: 64px;
+          
+          
+        }
+      
+        @include viewport(x-large) {
+          width: 1200px;
+          font-size: 64px;
+          text-align: left;
+          
+        }
+      }
+    
+      
+  }
+//Cookies//
+.modal-dialog {
+    @include viewport(small) {
+        margin: 50px auto auto auto;
+    }
+    @include viewport(medium) {
+        width: 600px;
+        margin: 100px auto auto auto;
+    }
+
+    @include viewport(large) {
+        width: 600px;
+        margin: 100px auto auto auto;;
+    }
+
+    @include viewport(x-large) {
+        width: 600px;
+        margin: 100px auto auto auto;
+    }
+    @include viewport(xx-large) {
+        width: 600px;
+        margin: 100px auto auto auto;
+    }
+}
+.modal-footer {
+    @include viewport(medium) {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    @include viewport(large) {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    @include viewport(x-large) {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    @include viewport(xx-large) {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+.cookie-row {
+    @include viewport(small) {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+.cookie-btn {
+    @include viewport(small) {
+        padding: 6px 12px;
+    }
+    @include viewport(medium) {
+        padding: 6px 40px;
+    }
+    @include viewport(large) {
+        padding: 6px 40px;
+    }
+    @include viewport(x-large) {
+        padding: 6px 40px;
+    }
+    @include viewport(xx-large) {
+        padding: 6px 40px;
+    }
+}
+//services//
+.service-heading{
+    @include viewport(x-large) {
+        width:1200px;
+         }  
+}
+.service-blocks{
+    @include viewport(large){
+      display: grid;
+      grid-template-columns: auto auto auto;
+        }
+    @include viewport(x-large) {
+        display: grid;
+      grid-template-columns: auto auto auto;
+            }
+    @include viewport(xx-large) {
+        display: grid;
+        grid-template-columns: auto auto auto;
+            }
+}
+.service-blocks-bottom{
+    @include viewport(medium) {
+        display: grid;
+      grid-template-columns: auto auto;
+         }
+    @include viewport(large){
+        display: grid;
+        box-sizing: border-box;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+        margin-top: 30px;
+        }
+        @include viewport(x-large) {
+            display: grid;
+      grid-template-columns: auto auto auto auto;
+                  }
+    @include viewport(xx-large) {
+    display: grid;
+grid-template-columns: auto auto auto auto;
+            }                  
+} 
+.service-block-one, .service-block-two{
+    @include viewport(large){
+        margin-right: 30px;
+          }
+      @include viewport(x-large) {
+        margin-right: 30px
+              }
+              @include viewport(xx-large) {
+                margin-right: 30px
+                      }     
+}
+.service-block-five, .service-block-six, .service-block-four{
+    @include viewport(medium) {
+        margin-right: 15px;
+        margin-left: 15px;
+         }
+                @include viewport(x-large) {
+                    
+                    margin-right: 30px;
+                                        }
+                @include viewport(xx-large) {
+                    margin-left: 15px;
+                    margin-right: 15px;
+                                        }        
+} 
+.service-block-seven{
+    @include viewport(medium) {
+        margin-right: 15px;
+        margin-left: 15px;
+         }    
+}
+    .service-block-three .p, .btn-dm .p {
+        @include viewport(x-large) {
+            margin-bottom: 40px;
+                  }  
+      
+    }
+    .service-block-six, .service-block-four{
+    @include viewport(medium) {
+        margin-left: 30px;
+         }
+        }
+//welcome//
+    .welcome-grid {
+        @include viewport(large){
+            display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 15px;
+                }
+        @include viewport(x-large){
+            display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 15px;
+                }
+        @include viewport(xx-large){
+            display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 15px;
+                }
+        
+    }
+    .welcome-left {
+        @include viewport(large){
+        grid-column-start: 1;
+                }
+        @include viewport(x-large){
+            grid-column-start: 1;
+                    }
+        @include viewport(xx-large){
+            grid-column-start: 1;
+                    }
+    }
+    .welcome-grid h2 {
+        @include viewport(large){
+            color: $white;
+        font-weight: 600;
+        font-size: 2.25rem;
+                    }
+        
+    }
+       
+        
+    .welcome-right {
+        @include viewport(large){
+            grid-column-start: 2;
+                    }
+        @include viewport(x-large){
+            grid-column-start: 2;
+                    }
+        @include viewport(xx-large){
+            grid-column-start: 2;
+                    }
+    }
+    .btn-reviews-google{
+        @include viewport(large){
+            margin-top: 20px;
+        }
+    }
+    .btn-reviews-trustpilot {
+        @include viewport(large){
+            margin-top: 45px;
+        }
+        @include viewport(x-large){
+            margin-top: 20px;
+        }
+        @include viewport(xx-large){
+            margin-top:70px;
+        }
+    }
+//news//
+.latest-articles{
+    @include viewport(large){
+        margin-top: 30px;
+    }
+    @include viewport(x-large){
+        margin-top: 30px;
+    }
+    @include viewport(xx-large){
+        margin-top: 30px;
+    }
+} 
+  .article-blocks{
+    @include viewport(small){
+        flex-direction: column;
+        }
+    @include viewport(medium){
+        display: flex;
+      gap: 30px;
+         }
+        @include viewport(large){
+        display: flex;
+        gap: 30px;    
+    }
+    @include viewport(x-large){
+        display: flex;
+      gap: 30px;    
+    }
+    @include viewport(xx-large){
+        display: flex;
+      gap: 30px;    
+    }
+          
+  }
+ .block-one{
+    @include viewport(medium){
+        width: 50%;
+      float: left;
+    }    
+ }
+.block-two{
+    @include viewport(medium){
+            width: 50%;
+            float: right;
+    }    
+ }        
+
+.block-three{
+    @include viewport(medium){
+        display: none;
+    }  
+    @include viewport(large){
+        display: none;    
+}
+@include viewport(x-large){
+    display: block;    
+}
+}
+ 
+  //newsletter//
+    .news-input {
+        @include viewport(large){
+        display: flex;
+        flex-direction: row;
+            }
+            @include viewport(x-large){
+                display: flex;
+                flex-direction: row;
+                    }
+                    @include viewport(xx-large){
+                        display: flex;
+                        flex-direction: row;
+                            }  
+    }
+    .name-input {
+        @include viewport(small){
+          max-width: 500px;
+          padding-right: 0 !important;
+                }
+            }
+            .email-input {
+                @include viewport(small){
+                  max-width: 500px;
+                  padding-right: 0 !important;
+                        }
+                    }
+    #newsletter-email, #newsletter-name {
+        @include viewport(large){
+        width: 450px;
+        display: block;
+        box-sizing: border-box;
+                }
+                @include viewport(x-large){
+                    width: 570px;
+                        } @include viewport(xx-large){
+                            width: 570px;
+                                }
+    }
+//footer//
+.footer{
+    @include viewport(large){
+        flex-direction: row;
+        }   
+}
+.about-footer h4, .about-footer h3{
+    @include viewport(medium) {
+        color: $white !important;
+         }    
+}
+.copyright .license{
+    @include viewport(small){
+        flex-direction: column;
+        }    
+}
+.about-netmatters{
+    @include viewport(x-large) {
+        justify-content: flex-start;
+        width: 397px;
+         }
+         @include viewport(xx-large) {
+            justify-content: flex-start;
+            width: 397px;
+             }      
+}
+.nm-logo-w{
+    @include viewport(small){
+        width: 100%;
+    }
+}
+.links{  
+    @include viewport(small){
+        flex-wrap: wrap;
+    flex-direction: column;
+        }  
+    @include viewport(medium){
+        display: grid;
+    grid-template-columns: 50% 50%;
+        }
+            @include viewport(large){
+                display: grid;
+                grid-template-columns: repeat(4, 25%);
+            }
+    @include viewport(x-large) {
+        display: flex;
+        flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    margin-left: -15px;
+    margin-right: -15px;
+    }
+    @include viewport(xx-large) {
+        display: flex;
+        flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    margin-left: -15px;
+    margin-right: -15px;
+    }
+}
+
+.footer-container{
+    @include viewport(x-large){
+        display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@include viewport(xx-large){
+    display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-between;
+}
+ }      
+
+.footer-li{
+    @include viewport(medium){
+        margin-top: 0px;
+    }
+    
+}
+.footer-menu{
+    @include viewport(x-large){
+        margin-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 25%;
+    }
+    @include viewport(xx-large){
+        margin-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 25%;
+    }        
+}
+//sidebar
+    .container-sidebar {
+        @include viewport(large){
+            
+      display: none;
+        }
+    } 
+    .main.main-sidebar-active{
+        @include viewport(small){
+            left: -300px;
+            }  
+        @include viewport(medium){
+            left: -260px;
+            }
+                @include viewport(large){
+                    left: -330px;
+                }
+        @include viewport(x-large){
+            left: -310px;
+        }
+        @include viewport(xx-large){
+            left: -310px;
+        }       
+    }
+   
+    

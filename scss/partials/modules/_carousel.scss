@@ -1,0 +1,213 @@
+
+.slick-dots{
+  bottom: 20px;
+}
+.slick-dots li button::before{
+  font-size: 12px;
+  color: $white;
+}
+@media (min-width: 1260px){
+.home-img img {
+    object-fit: cover;
+}
+}
+
+.slick-dots li.slick-active button:before
+{
+    opacity: .80;
+    color: $white;
+}
+#banner .slick-active::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid $white;
+  border-radius: 50%;
+  bottom: -2.5px;
+  left: -2px;
+  right: -2px;
+  top: -2.5px;
+ }
+
+.banner-carousel-container{
+  overflow: hidden;
+  color: $white;
+  position: relative;
+}
+
+.carousel-img img {
+  width: 100vw;
+  object-fit: cover;
+  min-height: 550px;
+  max-height: 550px;
+}
+
+#banner {
+  overflow: hidden;
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 1.8rem;
+    color: $white;
+    font-weight: 600;
+    @include viewport(large) {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+
+    @include viewport(x-large) {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+  }
+
+  p {
+    margin-bottom: 0.375rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    @include viewport(small) {
+      font-size: 1rem;
+    }
+    @include viewport(large) {
+      font-size: 1.625rem;
+      line-height: 2.5rem;
+    }
+
+    @include viewport(x-large) {
+      font-size: 1.625rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  a {
+    margin-top: 1.938rem;
+    line-height: 50px;
+    padding: 5px 20px;
+    font-size: 1.3rem;
+    border-radius: 3px;
+    @include viewport(small) {
+      margin-top: 1rem;
+    }
+  }
+}
+@media (min-width: 992px){
+#banner .h1 {
+    font-size: 3.5rem;
+    line-height: 5rem;
+    padding: 0;
+    margin-left: 0;
+}
+}
+.why{
+  h1 {
+    @include viewport(small) {
+      font-size: 2rem !important; 
+      margin-bottom: -1rem !important;
+    }
+  }
+  a {
+    @include viewport(small) {
+      margin-top: 1rem;
+    }
+  } 
+
+}
+.carousel-content {
+    filter: invert(0);
+    filter: brightness(100%);
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    font-weight: 200;
+    z-index: 990;
+    padding: 3.75rem 40px;
+    background: linear-gradient(270deg, transparent 25%, #000);
+    height: 100vh;
+    width: 100vw;
+  
+    @include viewport(large) {
+      text-align: left;
+    }
+  
+    @include viewport(x-large) {
+      width: 1200px;
+      text-align: left;
+      height: 100vh;
+    }
+    @include viewport(xx-large) {
+      width: 1200px;
+      text-align: left;
+      height: 110vh;
+    }
+    
+    & h1 {
+  
+      @include viewport(large) {
+        width: 900px;
+        font-size: 64px;
+        
+        
+      }
+    
+      @include viewport(x-large) {
+        width: 1200px;
+        font-size: 64px;
+        text-align: left;
+        
+      }
+    }
+  
+    
+}
+
+.why{
+  @include viewport(small) {
+    padding-top: 0;
+}
+}
+.btn-whyus{
+  @include btn-banner($wisteria) 
+}
+.btn-whyus:hover{
+  background-color: $affair; 
+}
+.btn-bespoke{
+  @include btn-banner($hoki) 
+}
+.btn-bespoke:hover{
+  background-color: $blue-bayoux; 
+}
+.btn-it-banner{
+  @include btn-banner($havelock-blue) 
+}
+.btn-it-banner:hover{
+  background-color: $cornflower-blue; 
+}
+.btn-digital{
+  @include btn-banner($shamrock) 
+}
+.btn-digital:hover{
+  background-color: $jungle-green; 
+}
+.btn-telecoms{
+  @include btn-banner($valencia) 
+}
+.btn-telecoms:hover{
+  background-color: $tall-poppy; 
+}
+.btn-web{
+  @include btn-banner($wisteria) 
+}
+.btn-web:hover{
+  background-color: $affair; 
+}
+.btn-cyber {
+  @include btn-banner($radical-red)
+}
+.btn-cyber:hover{
+  background-color: $red-ribbon; 
+}
