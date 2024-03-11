@@ -132,6 +132,6 @@
                 <div class="copyright-background">
                     <div class="container bottom-footer">
                         <div class="licence">
-                            <p>&copy; Copyright Netmatters 2023. All rights reserved.    - <a> Sitemap</a><p>
+                            <p>&copy; Copyright Netmatters 2023. All rights reserved. &nbsp;- <a> Sitemap</a><p>
                         </div>  
                 </div>

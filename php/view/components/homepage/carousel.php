@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="img-container-banner carousel-img main-img">
-                <img src="images/banner1.png" class="main-banner-image" alt="Home Page">
+                <img src="images/banners/banner1.png" class="main-banner-image" alt="Home Page">
             </div>
         </div>
         <div class="banner-image-home">
@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="img-container-banner carousel-img">
-                <img src="images/banner2.jpg" alt="Bespoke Software">
+                <img src="images/banners/banner2.jpg" alt="Bespoke Software">
             </div>
         </div>
         
@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="img-container-banner carousel-img">
-                <img src="images/banner3.png" alt="IT Support">
+                <img src="images/banners/banner3.png" alt="IT Support">
             </div>
         </div>
         
@@ -58,7 +58,7 @@
                 </a>
             </div>
             <div class="img-container-banner carousel-img">
-                <img src="images/banner4.png" alt="Digital Marketing">
+                <img src="images/banners/banner4.png" alt="Digital Marketing">
             </div>
         </div>
         
@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div class="img-container-banner carousel-img">
-                <img src="images/banner5.png" alt="Telecoms Services">
+                <img src="images/banners/banner5.png" alt="Telecoms Services">
             </div>
         </div>
         
@@ -89,7 +89,7 @@
                 </div>
             </div>
             <div class="img-container-banner carousel-img">
-                <img src="images/banner6.jpg" alt="Web Design">
+                <img src="images/banners/banner6.jpg" alt="Web Design">
             </div>
         </div>
         
@@ -105,7 +105,7 @@
                 </div>
             </div>
             <div class="img-container-banner carousel-img">
-                <img src="images/banner7.png" alt="Cyber Security">
+                <img src="images/banners/banner7.png" alt="Cyber Security">
             </div>
         </div>
         

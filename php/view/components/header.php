@@ -15,7 +15,7 @@
                                     </button>
                                     </div>
                                     <div class="contact element">
-                                        <a href="contact_us.php">
+                                        <a href="contact-us.php">
                                         <button type="button" class="btn btn-help btn-help-contact">
                                         <span class="pull-left">
                                         <span class="icon-paperplane plane"></span>

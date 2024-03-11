@@ -3,7 +3,7 @@ require_once 'config.php';
 // Head/header content
 include 'php/inc/head.php';
 
-//  Contact content
+//  Homepage content
 include 'php/view/contact.php';
 
 //  Footer content

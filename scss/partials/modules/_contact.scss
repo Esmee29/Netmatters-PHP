@@ -1,0 +1,22 @@
+.breadcrumb-container {
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+    padding: 14px 0 13px;
+}
+.container > ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.breadcrumb {
+    font-size: .8125rem;
+}
+.breadcrumb li:last-child::before {
+    content: "/ ";
+    padding: 0 5px;
+    color: #333645;
+}
+.breadcrumb a {
+    font-weight: 700;
+    color: #333645;
+}
