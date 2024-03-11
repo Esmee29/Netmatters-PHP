@@ -10,5 +10,6 @@ include 'php/view/components/footer.php';
 <script src="js/sticky-header.js"></script>
 <script src="js/sidebar.js"></script>
 <script src="js/carousel.js"></script>
+<script src="js/dropdown.js"></script>
 </body>
         </html>

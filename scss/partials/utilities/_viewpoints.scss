@@ -801,4 +801,184 @@ justify-content: space-between;
         }       
     }
    
+// contact
+.container.page-head {
+    @include viewport(large){
+        
+    background-color: transparent !important;
+    margin: 0 auto !important;
+    width: 970px !important;
+    padding-top: 50px;
+        }
+        @include viewport(xx-large){
+            
+    background-color: transparent !important;
+    margin: 0 auto !important;
+    width: 1200px !important;
+    padding-top: 50px;
+        }  
+}
+.container.page-head .section {
     
+@include viewport(large){
+        
+    padding-top: 0;
+    padding-bottom: 28px;
+        }
+}
+.page-head{
+    @include viewport(large){
+        background-color: transparent !important;
+            }
+            @include viewport(x-large){
+        background-color: transparent !important;
+       
+            }
+            @include viewport(xx-large){
+                background-color: transparent !important;
+               
+                    }    
+    }  
+    .container.page-head h1 {
+        @include viewport(large){
+            color: #121318  !important;
+            margin: 0 0 48px  !important;
+        }
+                @include viewport(x-large){
+                    color: #121318  !important;
+                    margin: 0 0 48px  !important;
+           
+                }
+                @include viewport(xx-large){
+                    color: #121318  !important;
+                    margin: 0 0 48px  !important;
+           
+                        }    
+    }
+
+        .container.page-head .section {
+            @include viewport(small){
+            margin-bottom: 50px
+                }  
+            @include viewport(medium){
+            margin-bottom: 50px
+                };
+        }
+            .office-addresses {
+                @include viewport(large){
+                height: 1640px;
+                }
+                        @include viewport(x-large){
+                            width: 1170px;
+                height: 1732px;
+                        }
+                        @include viewport(xx-large){
+                            width: 1170px;
+                height: 1732px;
+                   
+                                }  
+            }
+            .block {
+                @include viewport(large){
+                 width: 48%;
+                float: left;
+                    }
+             @include viewport(x-large){            
+                width: 48%;
+                float: left;
+                            }
+             @include viewport(xx-large){
+                width: 48%;
+                float: left;
+             }  
+            }
+                .margin-right {
+                    @include viewport(large){
+                        margin-right: 15px;
+                           }
+                    @include viewport(x-large){            
+                        margin-right: 15px;
+                                   }
+                    @include viewport(xx-large){
+                        margin-right: 15px;
+                    }  
+                }
+
+        .margin-left {
+                @include viewport(large){
+            margin-right: 15px;
+                }
+        @include viewport(x-large){            
+            margin-right: 15px;
+                        }
+        @include viewport(xx-large){
+            margin-right: 15px;
+        }  
+    }
+    
+.form-section {
+    @include viewport(small){
+        display: flex;
+        flex-direction: column;
+        }  
+    @include viewport(medium){
+        display: flex;
+        flex-direction: column;
+        }
+            @include viewport(large){
+                display: flex;
+                flex-direction: column;
+            }
+    @include viewport(x-large){
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    @include viewport(xx-large){
+        display: flex;
+        flex-direction: row-reverse;
+    }       
+    
+}
+        .netmatters-info {
+            @include viewport(x-large){
+                width: 33.33%;
+                padding-left: 30px;
+            }
+            @include viewport(xx-large){
+                width: 33.33%;
+                padding-left: 30px;
+            }    
+           
+        }
+.contact-form {
+    @include viewport(x-large){
+        padding-right: 15px;
+    width: 66.66666667%;
+    }
+    @include viewport(xx-large){
+        padding-right: 15px;
+    width: 66.66666667%;
+    }    
+    }
+
+.form-group-flex {
+    @include viewport(x-large){
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    @include viewport(xx-large){
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }    
+    
+}
+.form-group-space-between {
+    @include viewport(x-large){
+    width: 48%;
+    }
+    @include viewport(xx-large){
+    width: 48%;
+    }    
+}

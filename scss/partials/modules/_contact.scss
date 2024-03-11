@@ -1,7 +1,11 @@
+//breadcrumb
 .breadcrumb-container {
+    color: #333645;
+    font-size: 0.8125rem;
     box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
-    padding: 14px 0 13px;
+    padding: 14px 15px 13px;
 }
+
 .container > ul {
     display: flex;
     padding: 0;
@@ -19,4 +23,191 @@
 .breadcrumb a {
     font-weight: 700;
     color: #333645;
+}
+//Offices
+
+.block {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+
+.location-image img{
+    height: 100%;
+    width: 100%;
+}
+.img-office {
+    vertical-align: middle;
+}
+.location-content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align: left;
+}
+.location-content .h2 {
+    font-size: 1.25rem;
+    text-align: left;
+}
+.location-content .p {
+    font-size: .8125rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.location-content p {
+    padding: 0;
+    margin: 0 0 15px;
+}
+.h2 a {
+    text-decoration: none;
+    color: #333645;
+}
+.tel a {
+    font-weight: 700;
+}
+.text-web {
+    color: #926fb1 !important;
+}
+
+.img-office-location {
+    object-fit: cover;
+    height: 250px !important;
+    margin-bottom: -7px;
+    width: 100%;
+}
+//Contact info
+.section {
+    padding-bottom: 50px;
+}
+.drop-down-button {
+    font-weight: 600;
+    color: #333645;
+    line-height: 1.875rem;
+    margin-bottom: 25px;
+}
+
+.drop-down {
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+.drop-down-content-show {
+    display: block;
+}
+.drop-down-content-hidden {
+    display: none;
+}
+// Contact form
+.contact-form form {
+    background-color: #dddddd;
+    padding: 30px;
+    border-radius: 10px;
+}
+.hidden-all {
+    display: none;
+}
+.close {
+    position: relative;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    font-weight: 600;
+    color: #333645;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control {
+    height: 47px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 47px;
+    padding: 5px 15px;
+    border-color: #ccc;
+    width: 100%;
+    font-size: 14px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+#form-message {
+    height: 100px;
+}
+.newsletter-tickboxarea {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.recaptcha-terms {
+    color: #333645;
+    font-size: 11px;
+    font-weight: 600;
+}
+.btn-enquiry {
+    font-size: 1.063rem;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #333645;
+
+}
+
+.form .form-checkbox .form-checkbox-input {
+    display: none;
+}
+.form-checkbox{
+    display: flex;
+    cursor: pointer;
+}
+.form .form-checkbox .form-checkbox-label .media-left {
+    display: table-cell;
+    vertical-align: top;
+}
+.form .form-checkbox .form-checkbox-label .form-checkbox-button {
+    border-radius: 3px;
+    border: 3px solid #333645;
+    height: 32px;
+    width: 32px;
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+.form .form-checkbox .form-checkbox-label .form-checkbox-button .form-checkbox-icon {
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+}
+u {
+    color: #333645;
+}
+.policy {
+    color: #121318;
+    text-decoration: underline;
+}
+.form-checkbox-label-text{
+    color: #272936;
+}
+.contact-form form .group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-form form .group .required-notice {
+    color: #333645;
+    font-size: 14px;
+}
+.contact-form form .group .required-notice span {
+    color: #d64541;
 }
