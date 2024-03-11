@@ -4,7 +4,7 @@
                         <div class="container header-large hidden-md hidden-sm">
                             <div class="hidden-md hidden-sm header-row">
                                 <div class="logo-container">
-                                    <a href="#" ><img src="images/netmatters-logo-black.png" class="logo" alt="netmatters logo"></a>
+                                    <a href="index.php" ><img src="images/netmatters-logo-black.png" class="logo" alt="netmatters logo"></a>
                                     </div>
                                 <div class="support element">
                                     <button type="button" class="btn btn-help btn-help-support">
@@ -15,12 +15,14 @@
                                     </button>
                                     </div>
                                     <div class="contact element">
-                                    <button type="button" class="btn btn-help btn-help-contact">
+                                        <a href="contact_us.php">
+                                        <button type="button" class="btn btn-help btn-help-contact">
                                         <span class="pull-left">
                                         <span class="icon-paperplane plane"></span>
                                         </span>
                                         Contact
                                     </button>
+                                        </a>
                                     </div>
                                     <div class="search-large">
                                     <form class="search-bar">

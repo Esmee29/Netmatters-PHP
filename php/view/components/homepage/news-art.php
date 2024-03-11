@@ -52,7 +52,7 @@
                                 <div class="img-container">
                                 <a href="#" class="btn-tooltip btn-tooltip-one" title="View all: Telecoms Services / News">News</a>
                                 <a class="article-img">
-                                    <img src="images/east-anglian-air-1pHi.webp" class ="img-responsive img-container" alt="Gary Cullen - Octobers Notable of the Month">
+                                    <img src="images/east-anglian-air-1pHi.webp" class ="img-responsive img-container" alt="East Anglian Air Ambulance">
                                 </a> 
                                 </div>
                                 <div class="block-content">
