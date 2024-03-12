@@ -1,9 +1,4 @@
-<div class="container page-head">
-    <div class="section">
-        <h1>Our Offices</h1>
-    </div>
-</div>
-    <div class="container">
+
                             <div class="office-addresses">
                                 <div class="block address address-london margin-right">
                                     <div class="location-image">

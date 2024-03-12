@@ -982,3 +982,14 @@ justify-content: space-between;
     width: 48%;
     }    
 }
+.section {
+    @include viewport(large){
+        margin-top: 50px;
+     }
+    @include viewport(x-large){
+       margin-top: 80px;
+    }
+    @include viewport(xx-large){
+        margin-top: 80px;
+    }
+}
