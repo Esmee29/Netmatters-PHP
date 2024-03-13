@@ -1,5 +1,7 @@
 <?php
-var_dump($_POST);
+
+require_once 'DatabaseController.php';
+
 class ContactUsController
 {
     private $name;
@@ -22,7 +24,7 @@ class ContactUsController
 
     private $db;
 
-    public function __construct($db)
+    public function __construct(DatabaseController $db)
     {
         $this->db = $db;
     }
@@ -52,10 +54,13 @@ class ContactUsController
         } catch (Exception $e) {
             throw new Exception($e->getMessage());
         }
-        $sql = "INSERT INTO contact_us (sender, company, email, telephone, message, marketing) VALUES ('$this->name', '$this->company', '$this->email', '$this->telephone', '$this->message', '$this->marketing')";
+
+        $sql = "INSERT INTO contact (sender, company, email, telephone, message, marketing) VALUES ('$this->name', '$this->company', '$this->email', '$this->telephone', '$this->message', '$this->marketing')";
+        $params = [$this->name, $this->company, $this->email, $this->telephone, $this->message, $this->marketing];
+        
         try {
             $this->db->connect();
-            $this->db->query($sql);
+            $this->db->query($sql, $params);
             $this->db->disconnect();
         } catch (Exception $e) {
             throw new Exception($e->getMessage());
@@ -95,36 +100,42 @@ class ContactUsController
         if (!empty($this->errorMessage)) {
             throw new Exception(implode(" - ", $this->errorMessage));
         }
-
     }
 
+    // Getters for class properties
     public function getName()
     {
         return $this->name;
     }
+    
     public function getEmail()
     {
         return $this->email;
     }
+    
     public function getTelephone()
     {
         return $this->telephone;
     }
+    
     public function getMessage()
     {
         return $this->message;
     }
+    
     public function getMarketing()
     {
         return $this->marketing;
     }
+    
     public function getCompany()
     {
         return $this->company;
     }
+    
     public function isValid($key)
     {
         return $this->isValidArray[$key];
     }
-
 }
+?>
