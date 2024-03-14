@@ -33,9 +33,9 @@ try {
 
 
 <form id="form" class="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-    <div class="validation-msg" role="alert">
-        <span></span>
-    </div>
+<div class="validation-msg-container"></div>
+
+
                             <div class="grid-2">
         <div class="form-group">
             <label class="required" for="name">Your Name</label>

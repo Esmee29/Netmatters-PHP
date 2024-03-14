@@ -1,5 +1,5 @@
 
-    <div class="offices grid-2">
+<div class="offices grid-2">
     <div class="container">
                             <div class="office-addresses">
                                 <div class="block address address-london margin-right">

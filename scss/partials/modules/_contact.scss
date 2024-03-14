@@ -246,3 +246,32 @@
         font-family: "icomoon";
         content: "\ea10";
     }
+    //messages
+    .alert-danger{
+        display: flex;
+        justify-content: space-between;
+        background-color: #f2dede;
+        color: #a94442;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid #ebccd1;
+        border-radius: 2px;
+    }
+    .alert-success{
+        display: flex;
+        justify-content: space-between;
+        background-color: #ddffdd;
+        color: #00b67b;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid #9ae9b2;
+        border-radius: 2px;
+}
+.close-btn{
+    
+    position: relative;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+}
