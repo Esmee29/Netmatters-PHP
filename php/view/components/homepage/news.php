@@ -20,39 +20,40 @@ try {
     // Disconnect from the database
     $db->disconnect();
 
-    function articleContent($image, $imageAlt, $title, $readTime, $info, $authorImage, $authorName, $date, $counter)
-    {
-        return '
-        <div class="block-' . $counter . '">
-            <a class="article-link" href ="#"></a>
-            <div class="img-container">
-                <a href="#" class="btn-tooltip btn-tooltip-'. $counter .'" title="View all: Digital Marketing / News">News</a>
-                <a class="article-img">
-                <img src="' . $image . '" class ="img-responsive img-container" alt="' . $imageAlt . '">
-                </a> 
-            </div>
-            <div class="block-content">
-                <h3>
-                <a href="#">' . $title  . '</a>
-                <span class="readtime">' . $readTime . '</span>
-                </h3>
-                <p>' . $info . '</p>
-                <div class="btn btn-news btn-news-' . $counter . '">Read More</div>
-                
-                <div class="user">
-                    <div class="avatar">
-                        <img src="' . $authorImage . '" class="img-responsive" alt="Netmatters">
-                    </div>
-                    <div class="info">
-                        <strong>' . $authorName . '</strong> <br>
-                        ' . $date . '
-                    </div>
+    function articleContent($image, $imageAlt, $title, $readTime, $info, $type, $authorImage, $authorName, $date, $counter)
+{
+    return '
+    <div class="block block-' . $counter . '">
+        <a class="article-link" href ="#"></a>
+        <div class="img-container">
+            <a href="#" class="btn-tooltip btn-tooltip-' . $counter . '" title="View all: Digital Marketing / News">' . $type . '</a>
+            <a class="article-img">
+            <img src="' . $image . '" class ="img-responsive img-container" alt="' . $imageAlt . '">
+            </a> 
+        </div>
+        <div class="block-content">
+            <h3>
+            <a href="#">' . $title  . '</a>
+            <span class="readtime">' . $readTime . '</span>
+            </h3>
+            <p>' . $info . '</p>
+            <div class="btn btn-news btn-news-' . $counter . '">Read More</div>
+            
+            <div class="user">
+                <div class="avatar">
+                    <img src="' . $authorImage . '" class="img-responsive" alt="Netmatters">
+                </div>
+                <div class="info">
+                    <strong>' . $authorName . '</strong> <br>
+                    ' . $date . '
                 </div>
             </div>
-            
         </div>
-        ';
-    }
+        
+    </div>
+    ';
+}
+
 } catch (Exception $e) {
     echo "Error: " . $e->getMessage();
 }
@@ -68,7 +69,8 @@ try {
                                     $article["image_alt"], 
                                     $article["title"], 
                                     $article["read_time"], 
-                                    $article["info"], 
+                                    $article["info"],
+                                    $article["type"], 
                                     $article["author_image"], 
                                     $article["author_name"], 
                                     $article["date"], 

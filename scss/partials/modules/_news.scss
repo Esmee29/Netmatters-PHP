@@ -97,17 +97,18 @@
 .block-one {
   top: 0;
   border: 1px solid $input;
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px !important;
   flex-direction: column;
   margin-bottom: 30px;
   position: relative;
   transition: .5s ease;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 .block-two {
   top: 0;
   border: 1px solid $input;
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px !important;
   flex-direction: column;
   margin-bottom: 30px;
   position: relative;
@@ -128,7 +129,7 @@
 .block-three {
   top: 0;
   border: 1px solid $input;
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px !important;
   flex-direction: column;
   margin-bottom: 30px;
   position: relative;
@@ -192,6 +193,9 @@ line-height: 1.375rem;
 .btn-tooltip-one {
   background-color: $punch;
 }
+.btn-tooltip-two {
+  background-color: $punch;
+}
 .btn-tooltip-three{
   background-color: $havelock-blue;
 }
@@ -202,6 +206,9 @@ line-height: 1.375rem;
   color: $river-bed;
 }
 .btn-news-one {
+  @include btn-format($punch)
+}
+.btn-news-two {
   @include btn-format($punch)
 }
 .btn-news-three {

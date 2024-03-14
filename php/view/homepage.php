@@ -23,12 +23,10 @@ include 'php/view/components/homepage/welcome.php'; ?>
                         </h3> 
                     </div>
                         </div>
-                
-                        <div class="article-content">
-                
-                        <div class="article-blocks">
-                        <?php include("php/view/components/homepage/news.php"); ?>
-                       
+                        <div class="flex grid-news">                            <!-- News Grid -->
+                                <?php include("php/view/components/homepage/news.php"); ?>
+                        </div>
+                        
                             <h3 class="view-all view-all-mobile ">
                                 <a href="#">View All <span class="icon-arrow-right"></span></a>
                                 <span class="icon-arrow-right2"></span>
@@ -36,7 +34,6 @@ include 'php/view/components/homepage/welcome.php'; ?>
                             </div>
                             
                         
-                    </div>
                     </div>
             </div>
          </div>
