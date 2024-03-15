@@ -1,4 +1,7 @@
 <?php
+// Initialize $successMessage
+$successMessage = '';
+
 require_once 'php/controllers/DatabaseController.php'; 
 require_once 'php/controllers/ContactUsController.php'; 
 
@@ -24,12 +27,18 @@ try {
         $formValid = true;
         $formInPost = false;
         $errorMessage = '';
+
+        // Check if the form was submitted successfully
+        if ($formPosted) {
+            $successMessage = 'Form submitted successfully!';
+        }
     }
 } catch (Exception $e) {
     $errorMessage = $e->getMessage();
     echo "<script defer>console.log('Error: " . $errorMessage . "');</script>";
 }
 ?>
+
 
 
 <form id="form" class="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
