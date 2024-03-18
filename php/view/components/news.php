@@ -1,7 +1,7 @@
 <?php
 // Load environment variables
 require_once __DIR__ . '/../../../vendor/autoload.php';
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__, 'db.env');
 $dotenv->load();
 require_once 'php/controllers/DatabaseController.php';
 

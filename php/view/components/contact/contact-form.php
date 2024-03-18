@@ -1,7 +1,7 @@
 <?php
 // Load environment variables
 require_once __DIR__ . '/../../../../vendor/autoload.php';
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__, 'db.env');
 $dotenv->load();
 
 // Initialize $successMessage
@@ -14,7 +14,7 @@ $formPosted = $formInPost = $formValid = false;
 $errorMessage = '';
 
 try {
-    // Retrieve database connection details from environment variables
+    // Provide the required database connection details
     $host = $_ENV['MySQL_DB_HOST'];
     $dbname = $_ENV['MySQL_DB_NAME'];
     $dbusername = $_ENV['MySQL_DB_USER_NAME'];
@@ -22,6 +22,9 @@ try {
 
     // Instantiate the DatabaseController with the provided details
     $db = new DatabaseController($host, $dbusername, $dbpassword, $dbname);
+
+    // Connect to the database
+    $db->connect();
     // Instantiate the ContactUsController with the DatabaseController
     $formController = new ContactUsController($db);
     
