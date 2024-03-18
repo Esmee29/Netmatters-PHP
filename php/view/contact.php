@@ -1,5 +1,5 @@
 <?php
-include 'php/view/components/contact/breadcrumb.php';
+include 'php/view/components/breadcrumb.php';
 ?>
 <div class="container page-head">
     <div class="section">
@@ -7,7 +7,7 @@ include 'php/view/components/contact/breadcrumb.php';
     </div>
 </div>
 <div class="container contact-content">
-    <?php include 'php/view/components/contact/offices.php'; ?>
+    <?php include 'php/view/components/offices.php'; ?>
         <div class="container section">
             <div class="form-section">
                                 <div class="netmatters-info">
@@ -35,7 +35,7 @@ include 'php/view/components/contact/breadcrumb.php';
                                     </div>
                                 </div>
                 <div class="contact-form">
-                    <?php include 'php/view/components/contact/contact-form.php'; ?>
+                    <?php include 'php/view/components/contact-form.php'; ?>
                     </div> 
             </div>
         </div>

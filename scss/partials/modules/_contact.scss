@@ -74,10 +74,17 @@
 }
 
 .img-office-location {
-    object-fit: cover;
-    height: 250px !important;
-    margin-bottom: -7px;
+    overflow: hidden;
+    height: 100%;
     width: 100%;
+    -o-object-fit: none;
+    object-fit: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.map{
+    height: 250px !important;
 }
 //Contact info
 .section {
@@ -247,7 +254,7 @@
         content: "\ea10";
     }
     //messages
-    .alert-danger{
+    .alert-error{
         display: flex;
         justify-content: space-between;
         background-color: #f2dede;

@@ -24,7 +24,7 @@ include 'php/view/components/homepage/welcome.php'; ?>
                     </div>
                         </div>
                         <div class="flex grid-news">                            <!-- News Grid -->
-                                <?php include("php/view/components/homepage/news.php"); ?>
+                                <?php include("php/view/components/news.php"); ?>
                         </div>
                         
                             <h3 class="view-all view-all-mobile ">

@@ -11,6 +11,6 @@ include 'php/view/components/footer.php';
 <script src="js/sidebar.js"></script>
 <script src="js/carousel.js"></script>
 <script src="js/dropdown.js"></script>
-<script src="js/contact.js"></script>
+<script src="js/form.js"></script>
 </body>
         </html>

@@ -1,12 +1,16 @@
 <?php
+// Load environment variables
+require_once __DIR__ . '/../../../vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 require_once 'php/controllers/DatabaseController.php';
 
 try {
     // Provide the required database connection details
-    $host = 'localhost';
-    $dbname = 'netmatters_data';
-    $dbusername = 'root';
-    $dbpassword = '';
+    $host = $_ENV['MySQL_DB_HOST'];
+    $dbname = $_ENV['MySQL_DB_NAME'];
+    $dbusername = $_ENV['MySQL_DB_USER_NAME'];
+    $dbpassword = $_ENV['MySQL_DB_PASSWORD'];
 
     // Instantiate the DatabaseController with the provided details
     $db = new DatabaseController($host, $dbusername, $dbpassword, $dbname);

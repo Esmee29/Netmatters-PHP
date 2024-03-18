@@ -29,11 +29,16 @@ class DatabaseController {
         $this->connection = null;
     }
 
-    public function query($query) {
+    public function query($query, $params = []) {
         try {
             $statement = $this->connection->prepare($query);
             if ($statement === false) {
                 throw new PDOException('Failed to prepare statement');
+            }
+
+            // Bind parameters if provided
+            foreach ($params as $key => $value) {
+                $statement->bindValue($key + 1, $value);
             }
 
             $success = $statement->execute();
@@ -43,7 +48,8 @@ class DatabaseController {
             
             return $statement->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
-            echo "Error selecting data: " . $e->getMessage();
+            // Log or display the error
+            echo "Error executing query: " . $e->getMessage();
         }
     }
 }

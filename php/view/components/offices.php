@@ -54,7 +54,7 @@
                                         </div>
                                     </div>
                                     <div class="map">
-                                        <img src="images/Offices/maps/cambridge.png" class="img-office-location office-img">
+                                        <img src="images/Offices/maps/cambridge - Copy.png" class="img-office-location office-img">
                                     </div>
                                 </div>
 
