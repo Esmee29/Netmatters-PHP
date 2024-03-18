@@ -17,7 +17,7 @@ class ContactUsController
         'email' => false,
         'telephone' => false,
         'message' => false,
-        'marketing' => true
+        'marketing' => true // Set to true by default
     );
 
     private $errorMessage;
@@ -30,45 +30,40 @@ class ContactUsController
     }
 
     public function send()
-{
-    $this->name = $_POST['name'];
-    $this->company = $_POST['company'];
-    $this->email = $_POST['email'];
-    $this->telephone = $_POST['telephone'];
-    $this->message = $_POST['message'];
+    {
+        $this->name = $_POST['name'] ?? '';
+        $this->company = $_POST['company'] ?? '';
+        $this->email = $_POST['email'] ?? '';
+        $this->telephone = $_POST['telephone'] ?? '';
+        $this->message = $_POST['message'] ?? '';
 
-    $this->name = htmlspecialchars(strip_tags($this->name), ENT_QUOTES, 'UTF-8');
-    $this->company = htmlspecialchars(strip_tags($this->company), ENT_QUOTES, 'UTF-8');
-    $this->email = htmlspecialchars(strip_tags($this->email), ENT_QUOTES, 'UTF-8');
-    $this->telephone = htmlspecialchars(strip_tags($this->telephone), ENT_QUOTES, 'UTF-8');
-    $this->message = htmlspecialchars(strip_tags($this->message), ENT_QUOTES, 'UTF-8');
+        $this->name = htmlspecialchars(strip_tags($this->name), ENT_QUOTES, 'UTF-8');
+        $this->company = htmlspecialchars(strip_tags($this->company), ENT_QUOTES, 'UTF-8');
+        $this->email = htmlspecialchars(strip_tags($this->email), ENT_QUOTES, 'UTF-8');
+        $this->telephone = htmlspecialchars(strip_tags($this->telephone), ENT_QUOTES, 'UTF-8');
+        $this->message = htmlspecialchars(strip_tags($this->message), ENT_QUOTES, 'UTF-8');
 
-    if (isset($_POST['marketing'])) {
-        $this->marketing = true;
-    } else {
-        $this->marketing = false;
+        $this->marketing = isset($_POST['marketing']) ? 1 : 0;
+
+        try {
+            $this->validate($this->name, $this->email, $this->telephone, $this->message);
+        } catch (Exception $e) {
+            throw new Exception($e->getMessage());
+        }
+
+        $sql = "INSERT INTO contact (sender, company, email, telephone, message, marketing) VALUES (?, ?, ?, ?, ?, ?)";
+        $params = array($this->name, $this->company, $this->email, $this->telephone, $this->message, $this->marketing);
+
+        try {
+            $this->db->connect();
+            $this->db->query($sql, $params);
+            $this->db->disconnect();
+        } catch (Exception $e) {
+            throw new Exception($e->getMessage());
+        }
+
+        return true;
     }
-
-    try {
-        $this->validate($this->name, $this->email, $this->telephone, $this->message);
-    } catch (Exception $e) {
-        throw new Exception($e->getMessage());
-    }
-
-    $sql = "INSERT INTO contact (sender, company, email, telephone, message, marketing) VALUES (?, ?, ?, ?, ?, ?)";
-    $params = array($this->name, $this->company, $this->email, $this->telephone, $this->message, $this->marketing);
-
-    try {
-        $this->db->connect();
-        $this->db->query($sql, $params);
-        $this->db->disconnect();
-    } catch (Exception $e) {
-        throw new Exception($e->getMessage());
-    }
-
-    return true;
-}
-
 
     private function validate($name, $email, $telephone, $message)
     {
@@ -108,32 +103,32 @@ class ContactUsController
     {
         return $this->name;
     }
-    
+
     public function getEmail()
     {
         return $this->email;
     }
-    
+
     public function getTelephone()
     {
         return $this->telephone;
     }
-    
+
     public function getMessage()
     {
         return $this->message;
     }
-    
+
     public function getMarketing()
     {
         return $this->marketing;
     }
-    
+
     public function getCompany()
     {
         return $this->company;
     }
-    
+
     public function isValid($key)
     {
         return $this->isValidArray[$key];

@@ -1,10 +1,11 @@
 <?php
 // Load environment variables
 require_once __DIR__ . '/../../../vendor/autoload.php';
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__, 'db.env');
 $dotenv->load();
 
-
+// Initialize $successMessage
+$successMessage = '';
 
 require_once 'php/controllers/DatabaseController.php'; 
 require_once 'php/controllers/ContactUsController.php'; 
@@ -13,19 +14,20 @@ $formPosted = $formInPost = $formValid = false;
 $errorMessage = '';
 
 try {
-    // Retrieve database connection details from environment variables
+    // Provide the required database connection details
     $host = $_ENV['MySQL_DB_HOST'];
     $dbname = $_ENV['MySQL_DB_NAME'];
     $dbusername = $_ENV['MySQL_DB_USER_NAME'];
     $dbpassword = $_ENV['MySQL_DB_PASSWORD'];
 
-    
     // Instantiate the DatabaseController with the provided details
     $db = new DatabaseController($host, $dbusername, $dbpassword, $dbname);
 
+    // Connect to the database
+    $db->connect();
     // Instantiate the ContactUsController with the DatabaseController
     $formController = new ContactUsController($db);
-
+    
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $formInPost = true;
         $formPosted = $formController->send();
@@ -101,4 +103,3 @@ try {
         <small class="required-notice"><span>*</span> Fields Required</small>
     </div>
 </form> 
-
